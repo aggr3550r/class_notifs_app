@@ -1,0 +1,21 @@
+- App will maintain a database of users containing their names, reg. no. and email address and password
+
+- Users will be manually elevated to admin/class-rep status
+
+                Main Features
+
+1. App should store user credentials
+    1.1 Use MongoDB to store user info
+
+2. Only admins should be able to broadcast public message to user emails
+    2.1 Verify that user is logged in
+    2.2 Verify that logged in user is an admin
+    2.3 Fetch all users' email addresses from DB
+        2.3.1 store all fetched email addresses in an array 
+
+    2.4 Use SMTP to broadcast messages to all fetched email addresses
+        2.4.1 use a loop to send the same broadcast to all the elements in the array of addresses
+
+
+
+for each object in this array, take the values of all keys named "email"
